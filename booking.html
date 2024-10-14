@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Service</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <!-- Container for everything -->
+    <div class="box-container">
+
+        <!-- Header Section -->
+        <header>
+            <div class="logo">AutoMob-Mechanic</div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="mailto:contact@automob.co.in">contact@automob.co.in</a></li>
+                    <li><a href="tel:9999999999">999-999-9999</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <form action="booking-success.html" method="POST">
+                <h2>Book Your Service</h2>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z]+\s[A-Za-z]+" placeholder="First Last" required>
+
+                <label for="email">Email Id</label>
+                <input type="email" id="email" name="email" pattern=".+@.+\..+" placeholder="xyz@abc.com" required>
+
+                <label for="phone">Phone Number</label>
+                <div class="phone-group">
+                    <select id="code" name="code" required>
+                        <option selected disabled value="">code</option>
+                        <option value="+213">+213</option>
+                        <option value="+91">+91</option>
+                        <option value="+244">+244</option>
+                        <option value="+61">+61</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+                </div>
+
+                <label for="service">Select Service</label>
+                <select id="service" name="service" required>
+                    <option disabled selected value="">--Select--</option>
+                    <option value="Preventive Maintenance">Preventive Maintenance</option>
+                    <option value="Body Repair Service">Body Repair Service</option>
+                    <option value="Car Care Service">Car Care Service</option>
+                </select>
+
+                <label for="make">Car Make</label>
+                <input list="car-make" id="make" name="make" required>
+                <datalist id="car-make">
+                    <option value="Mahindra">
+                    <option value="Honda">
+                    <option value="Hyundai">
+                    <option value="Ford">
+                    <option value="Toyota">
+                    <option value="Nissan">
+                </datalist>
+
+                <label for="model">Car Model</label>
+                <input type="text" id="model" name="model" required>
+
+                <label for="fuel">Fuel Type</label>
+                <div class="fuel-group">
+                    <input type="radio" id="petrol" name="fuel" value="Petrol" required>
+                    <label for="petrol">Petrol</label>
+                    <input type="radio" id="diesel" name="fuel" value="Diesel">
+                    <label for="diesel">Diesel</label>
+                    <input type="radio" id="lpg" name="fuel" value="LPG">
+                    <label for="lpg">LPG</label>
+                    <input type="radio" id="other" name="fuel" value="Other">
+                    <label for="other">Others</label>
+                </div>
+
+                <label for="kilometers">Kilometers Ran</label>
+                <input type="number" id="kilometers" name="kilometers" placeholder="Enter kilometers" required>
+
+              
+            </form>
+
+           
+
+            <div class="image-section">
+                <img src="assets/booking.jpg" alt="Booking Service Image">
+            </div>
+        </div>
+
+        <div class="schedule-button">
+            <button type="submit">Schedule your Appointment</button>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-detail {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.breadcrumb p {
+    color: #e53935;
+    margin-bottom: 20px;
+}
+
+.breadcrumb p a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.service-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#save
+{
+    color: #e53935;
+}
+
+
+
+.left
+{
+    width: 50%;
+    height: 100%;
+}
+
+.service-image {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-info h2 {
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.book-service-btn {
+    display: inline-block;
+    background-color: #e53935;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-service-btn:hover {
+    background-color: #c12727;
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
